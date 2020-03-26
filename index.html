@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jogo das Cores</title>
+</head>
+<body>
+<style type="text/css">
+	body {
+		color: black;
+	}
+	header {
+	
+	}
+	section {
+
+	}
+
+	h1 {
+		text-align: center;
+	}
+	h2 {
+		text-align: center;
+	}
+	#cor-escolha {
+		background-color: black;
+		margin-top: 25px;
+		height: 400px;
+		width: 400px;
+		border-radius: 50%;
+		margin-left: 60%;
+		text-align: center;
+
+	}
+	div {
+		text-align: center;
+		padding: 10px;
+
+	}
+	select {
+		text-align: center;
+		margin-left: 48%;
+	}
+	#resp {
+		font-size: 40px;
+		text-align: center;
+	}
+
+</style>
+	<header>
+		<h1>
+			Jogo das Cores
+		</h1>
+	</header>
+	<section>
+		<h2>
+			Escolha a cor e depois passe o mouse por cima da bola
+		</h2>
+		<div>
+			Amarelo | Azul | verde | Vermelho
+		</div>
+	</section>
+	<section>
+		<select onchange="DaResposta(this)">
+			<option>Escolha</option>
+			<option value="0">Amarelo</option>
+			<option value="1">Azul</option>
+			<option value="2">Verde</option>
+			<option value="3">Vermelho</option>
+		</select>
+	</section>
+	<footer>
+		<div id='cor-escolha' onmouseover="change(this)" onmouseout="changeBack()"></div>
+	</footer>
+	<div id="resp">Ola</div>
+</body>
+
+<script type="text/javascript" src="funcionalidade.js"></script>
+
+</html>
